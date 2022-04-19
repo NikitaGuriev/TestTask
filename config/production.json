@@ -1,0 +1,6 @@
+{
+  "port": 82,
+  "mongoURI": "mongodb+srv://nikitaguriev:b3zP9TcYHOl2WFuD@khvostiki.b9ds2.mongodb.net/khvostiki?retryWrites=true&w=majority",
+  "baseURL": "http://localhost:5000",
+  "jwtSecret": "BalluMSIXiaomi"
+}
