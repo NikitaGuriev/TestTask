@@ -1,31 +1,29 @@
 import {Button, Col, Container, Row} from "react-bootstrap";
 import AXIOS from 'axios';
 
-AXIOS.get('https://jsonplaceholder.typicode.com/photos/?_limit=24')
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+// const getData = async () => {
+//   return await AXIOS.get('https://jsonplaceholder.typicode.com/photos/?_limit=24')
+//     .then((response) => {
+//       return response;
+//     });
+// }
 
 /**
  * Блок определения констант
  */
-export const IndexPage = () => {
+export const IndexPage = async () => {
+
   return (
     <>
       <Container className="mt-4">
         <Row>
           <Col>
-            1 of 1
+            <h2>Index page</h2>
           </Col>
+        </Row>
+        <Row>
           <Col>
-            <Button
-              variant="primary"
-            >
-              Index page
-            </Button>
+            Lorem
           </Col>
         </Row>
       </Container>

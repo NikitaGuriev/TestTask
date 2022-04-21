@@ -3,7 +3,6 @@
  */
 const express = require('express');
 const CONFIG = require('config');
-const MONGOOSE = require('mongoose');
 const BODY_PARSER = require('body-parser');
 const PATH = require('path');
 
@@ -41,19 +40,11 @@ APP.use(BODY_PARSER.json());
 /**
  * Запуск сервера
  */
-async function start() {
-  try {
-    await MONGOOSE.connect(CONFIG.get('mongoURI'), {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
-    APP.listen(PORT, () => {
-      console.log(`App backend successful started on port ${PORT}...`);
-    });
-  } catch (err) {
-    console.log('Server error!', err);
-    process.exit(1);
-  }
+try {
+  APP.listen(PORT, () => {
+    console.log(`App backend successful started on port ${PORT}...`);
+  });
+} catch (err) {
+  console.log('Server error!', err);
+  process.exit(1);
 }
-
-start();

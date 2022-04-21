@@ -1,6 +1,6 @@
 {
-  "name": "uTorrent",
-  "short_name": "NikitaGuriev.site",
+  "name": "Test task",
+  "short_name": "TT",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
@@ -11,7 +11,7 @@
     "social",
     "personalization"
   ],
-  "description": "µTorrent (uTorrent) Classic | Исходная версия торрент-клиента",
+  "description": "Test task",
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
