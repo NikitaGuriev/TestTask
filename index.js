@@ -14,7 +14,6 @@ const APP = express();
 /**
  * Роутинг
  */
-APP.use('/api/auth', require('./routes/auth.routes'));
 APP.use('/', require('./routes/main.routes'));
 
 if (process.env.NODE_ENV === 'production') {
