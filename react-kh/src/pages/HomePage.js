@@ -47,7 +47,6 @@ export const HomePage = () => {
   )
 }
 const Items = ({item}) => {
-  console.log(item);
   return (
     <div>
       <Row className="my-4 p-4 shadow-sm rounded bg-white">
